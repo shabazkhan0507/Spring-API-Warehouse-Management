@@ -1,0 +1,110 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Spring-API-REST-WAREHOUSE-MANAGEMENT REST petitions - Inventory",
+		"description": "# Requests for API REST Crud warehousemanagement.\n\n* Include: GET, DEL, PUT, POST.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/inventory.json"
+	},
+	"item": [
+		{
+			"name": "01-POST: add a new Inventory in the DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/manageInventory",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"artId\": \"1\",\"name\": \"Sales\",\"stock\": \"10\"}"
+				},
+				"description": "* Creating a new Inventory using POST /api/v1.0/warehousemanagement/manageInventory API\n* localhost:8081/api/v1.0/warehousemanagement/manageInventory\n*"
+			},
+			"response": []
+		},
+		{
+			"name": "02-GET: retrieving all warehousemanagement Inventory stored in DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/getInventoryList",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Retrieving all warehousemanagement using GET /api/v1.0/warehousemanagement/getInventoryList API\n* localhost:8081/api/v1.0/warehousemanagement/getInventoryList"
+			},
+			"response": []
+		},
+		{
+			"name": "03-GET: retrieving a single Inventory by id",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/getInventory/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Retrieving a single Inventory using GET /api/v1.0/warehousemanagement/getInventory/{inventoryId} API\n* localhost:8081/v1.0/api/warehousemanagement/getInventory/1"
+			},
+			"response": []
+		},
+		{
+			"name": "04- PUT: updating a Inventory by his id",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/manageInventory/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"artId\": \"1\",\"name\": \"Safety Stock\",\"stock\": \"5\"}"
+				},
+				"description": "* Updating a Inventory using PUT /api/v1.0/warehousemanagement/manageInventory/{inventoryId} API\n* localhost:8080/api/v1.0/warehousemanagement/manageInventory/1\n*"
+			},
+			"response": []
+		},
+		{
+			"name": "05- DEL: deleting a Inventory by id stored in DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/deleteInventory/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Deleting a Inventory using DELETE /api/v1.0/warehousemanagement/deleteInventory/{inventoryId} API\n* localhost:8081/api/v1.0/warehousemanagement/deleteInventory/1"
+			},
+			"response": []
+		}
+	]
+}

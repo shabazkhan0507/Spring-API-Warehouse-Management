@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: warehousemanagement
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: SHABG
+Implementation-Vendor-Id: com.ingka.warehousemanagement
+Build-Jdk: 1.8.0_251
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/warehousemanagement
+Created-By: Maven Integration for Eclipse
+

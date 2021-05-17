@@ -1,0 +1,110 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Spring-API-REST-WAREHOUSE-MANAGEMENT REST petitions - AssociateArticles",
+		"description": "# Requests for API REST Crud warehousemanagement.\n\n* Include: GET, DEL, PUT, POST.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/associateArticles.json"
+	},
+	"item": [
+		{
+			"name": "01-POST: add a new AssociateArticles in the DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/manageAssociateArticles",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"artId\": \"1\",\"amountOf\": \"10\",\"productId\": \"1\"}"
+				},
+				"description": "* Creating a new AssociateArticles using POST /api/v1.0/warehousemanagement/manageAssociateArticles API\n* localhost:8081/api/v1.0/warehousemanagement/manageAssociateArticles\n*"
+			},
+			"response": []
+		},
+		{
+			"name": "02-GET: retrieving all warehousemanagement AssociateArticles stored in DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/getAllAssociateArticles",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Retrieving all warehousemanagement using GET /api/v1.0/warehousemanagement/getAllAssociateArticles API\n* localhost:8081/api/v1.0/warehousemanagement/getAllAssociateArticles"
+			},
+			"response": []
+		},
+		{
+			"name": "03-GET: retrieving a single AssociateArticles by id",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/getAssociateArticles/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Retrieving a single AssociateArticles using GET /api/v1.0/warehousemanagement/getAssociateArticles/{associateArticlesId} API\n* localhost:8081/v1.0/api/warehousemanagement/getAssociateArticles/1"
+			},
+			"response": []
+		},
+		{
+			"name": "04- PUT: updating a AssociateArticles by his id",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/manageAssociateArticles/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"artId\": \"1\",\"amountOf\": \"15\",\"productId\": \"1\"}"
+				},
+				"description": "* Updating a AssociateArticles using PUT /api/v1.0/warehousemanagement/manageAssociateArticles/{associateArticlesId} API\n* localhost:8080/api/v1.0/warehousemanagement/manageAssociateArticles/1\n*"
+			},
+			"response": []
+		},
+		{
+			"name": "05- DEL: deleting a AssociateArticles by id stored in DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/deleteAssociateArticles/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Deleting a AssociateArticles using DELETE /api/v1.0/warehousemanagement/deleteAssociateArticles/{associateArticlesId} API\n* localhost:8081/api/v1.0/warehousemanagement/deleteAssociateArticles/1"
+			},
+			"response": []
+		}
+	]
+}

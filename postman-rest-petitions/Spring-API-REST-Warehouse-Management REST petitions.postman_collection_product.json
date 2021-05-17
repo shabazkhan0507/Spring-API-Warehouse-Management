@@ -1,0 +1,110 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Spring-API-REST-WAREHOUSE-MANAGEMENT REST petitions - Products",
+		"description": "# Requests for API REST Crud warehousemanagement.\n\n* Include: GET, DEL, PUT, POST.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/products.json"
+	},
+	"item": [
+		{
+			"name": "01-POST: add a new Product in the DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/manageProducts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Dining Chair\"}"
+				},
+				"description": "* Creating a new Product using POST /api/v1.0/warehousemanagement/manageProducts API\n* localhost:8081/api/v1.0/warehousemanagement/manageProducts\n*"
+			},
+			"response": []
+		},
+		{
+			"name": "02-GET: retrieving all warehousemanagement products stored in DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/getAllProducts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Retrieving all warehousemanagement using GET /api/v1.0/warehousemanagement/getAllProducts API\n* localhost:8081/api/v1.0/warehousemanagement/getAllProducts"
+			},
+			"response": []
+		},
+		{
+			"name": "03-GET: retrieving a single Product by id",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/getProducts/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Retrieving a single Product using GET /api/v1.0/warehousemanagement/getProducts/{productId} API\n* localhost:8081/v1.0/api/warehousemanagement/getProducts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "04- PUT: updating a Product by his id",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/manageProducts/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"SOFA\"}"
+				},
+				"description": "* Updating a Product using PUT /api/v1.0/warehousemanagement/manageProducts/{productId} API\n* localhost:8080/api/v1.0/warehousemanagement/manageProducts/1\n*"
+			},
+			"response": []
+		},
+		{
+			"name": "05- DEL: deleting a Product by id stored in DB",
+			"request": {
+				"url": "localhost:8081/api/v1.0/warehousemanagement/deleteProducts/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "* Deleting a Product using DELETE /api/v1.0/warehousemanagement/deleteProducts/{productId} API\n* localhost:8081/api/v1.0/warehousemanagement/deleteProducts/1"
+			},
+			"response": []
+		}
+	]
+}
